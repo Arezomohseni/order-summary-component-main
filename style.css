@@ -1,33 +1,115 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    height: 100vh;
-    /* background-color: hsl(225, 100%, 94%); */
-    background-image: url('./images/pattern-background-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#top-part {
-    border-radius: 14px;
+.text-part {
+  width: 450px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
-
 
 .main {
-
-    justify-content: center;
-    text-align: center;
-
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.down-part {
-    background-color: hsl(0, 0%, 100%);
-    width: 450px;
-    text-align: center;
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  padding: 20px 0;
+}
 
+.heading1,
+.heading2 {
+  color: hsl(223, 47%, 23%);
+}
 
+.heading1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  padding-top: 20px;
+}
+
+.music-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment {
+  width: 330px;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 25px;
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  box-shadow: 0px 15px 15px hsl(221, 20%, 84%);
+  font-weight: 700;
+}
+
+.payment:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.cancelling {
+  border: 0;
+  background-color: hsl(0, 0%, 100%);
+  padding-bottom: 40px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.cancelling:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: hsl(245, 75%, 52%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
 }
